@@ -1,6 +1,6 @@
 <template>
     <div class="main_section">
-        <h2> &lt; -- Content goes here -- &gt; </h2>
+        <h2 class="text_white"> &lt; -- Content goes here -- &gt; </h2>
     </div>
 </template>
 
@@ -10,8 +10,8 @@ export default {
 }
 </script>
 
-<style>
-    h2 {
+<style scoped>
+    .text_white {
         color: white;
     }
 
