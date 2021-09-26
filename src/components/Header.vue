@@ -1,6 +1,6 @@
 <template>
   <header>
-      <div class="">
+      <div class="header_wrap">
         <a href="#" class="header_logo">
             <img src="../assets/vue-dc-comics-1/img/dc-logo.png" alt="dc logo">
         </a>
@@ -87,23 +87,21 @@ export default {
 }
 </script>
 
-<style>
+<style scoped >
+
     ul {
         list-style: none;
         text-decoration-style: none;
-        float: right;
-        display: flex;
-        justify-content: flex-end;
+       
     }
 
     .header_logo {
-        float: left;
-        margin: -30px 0 -30px 100px;
+        margin: -30px 100px -30px 200px;
     }
 
     li {
        padding-right: 15px;
-       
+        display: inline-block;
     }
 
     a {
@@ -113,7 +111,9 @@ export default {
         font-weight: bold;
     }
 
-    .header_section {
-        padding: 30px;
+    .header_wrap {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 50px
     }
 </style>
