@@ -87,7 +87,10 @@ export default {
 }
 </script>
 
-<style scoped >
+<style lang="scss" scoped>
+
+@import "../style/variables.scss";
+@import "../style/general.scss";
 
     ul {
         list-style: none;
@@ -96,24 +99,35 @@ export default {
     }
 
     .header_logo {
-        margin: -30px 100px -30px 200px;
+        margin: -30px 0 -30px 0;
     }
 
     li {
-       padding-right: 15px;
+        padding-right: 15px;
         display: inline-block;
+         
     }
 
     a {
         text-decoration: none;
         text-transform: uppercase;
-        color: black;
+        color: $blackColor;
         font-weight: bold;
+
+        &:active {
+        color: $dcLogoColor;
+            .div-line-nav {
+            background-color: $dcLogoColor;
+            height: 2px;
+            width: 30px;
+            }
+        }
     }
 
     .header_wrap {
         display: flex;
-        justify-content: flex-start;
-        margin-bottom: 50px
+        justify-content: space-between;
+        padding: 50px 100px 40px 100px;
     }
+
 </style>
