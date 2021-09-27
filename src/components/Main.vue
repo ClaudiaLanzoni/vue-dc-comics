@@ -1,6 +1,6 @@
 <template>
     <main class="main_section">
-        <Card v-for="(element, index) in comics" :key="index"/>
+        <Card v-for="(element, index) in comics" :key="index" :series="element.series" :thumb="element.thumb"/>
     </main>
 </template>
 
@@ -106,6 +106,7 @@ export default {
         height: 500px;
         display: flex;
         flex-wrap: wrap;
+        margin: 0 auto;
     }
 
 </style>
