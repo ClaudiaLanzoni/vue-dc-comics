@@ -228,7 +228,6 @@ export default {
 
         p {
             color: $dcLogoColor;
-            padding-bottom: 20px
         }
     }
 

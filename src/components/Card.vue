@@ -16,7 +16,12 @@
 <script>
 export default {
     name: 'Card',
-    props: ['thumb', 'series']
+    //props: ['thumb', 'series']
+
+    props : { //meglio perchè "documenta" il tipo di informazione
+        thumb : String,
+        series : String
+    }
 }
 </script>
 
