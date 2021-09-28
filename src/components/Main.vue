@@ -1,7 +1,20 @@
 <template>
-    <main class="main_section">
-        <Card v-for="(element, index) in comics" :key="index" :series="element.series" :thumb="element.thumb"/>
-    </main>
+    <div class="main_wrap">
+
+      <div class="my_pos_rel">
+        <div class="current_series_box">Current series</div>
+      </div>
+
+      <main class="main_section">
+        
+          <Card v-for="(element, index) in comics" :key="index" :series="element.series" :thumb="element.thumb"/>
+      </main>
+      
+      <div>
+        <button class="btn_load">Load more</button>
+      </div>
+
+    </div>
 </template>
 
 <script>
@@ -102,11 +115,45 @@ export default {
 
     .main_section {
         padding: 50px 100px 40px 100px;
-        background-color: $blackColor;
         height: 500px;
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
+    }
+
+    .main_wrap {
+      background-color: $blackColor;
+    }
+
+    .current_series_box {
+      height: 50px;
+      width: 150px;
+      line-height: 50px;
+      font-size: 1.2em;
+      background-color: $dcLogoColor;
+      color: $whiteColor;
+      text-transform: uppercase;
+      position: absolute;
+      left: 100px;
+      top: -25px;
+    }
+
+    .my_pos_rel {
+      position: relative;
+    }
+
+    .btn_load {
+      background-color: $dcLogoColor;
+      border: none;
+      color: white;
+      padding: 10px 60px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: 'Staatliches';
+      margin-bottom: 20px;
     }
 
 </style>

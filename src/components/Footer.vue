@@ -44,7 +44,7 @@
 
         <div class="downer_footer_wrap">
 
-            <button>SIGN-UP NOW!</button>
+            <button class="btn_footer" >SIGN-UP NOW!</button>
 
             <div class="media_logo_section">
                 <p class="my_inline">FOLLOW US</p>
@@ -74,133 +74,108 @@ export default {
                 {
                     text : "Characters",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Comics",
                     url : "#",
-                    current : true,
                 },
                 {
                     text : "Movies",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "TV",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Games",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Videos",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "News",
                     url : "#",
-                    current : false,
                 }],
 
             listShop : [
                 {
                     text : "Shop DC",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Shop DC Collectibles",
                     url : "#",
-                    current : false,
                 }],
 
             listDC : [
                 {
                     text : "Terms of use",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Privacy policy (New)",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Ad Choices",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Advertising",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Jobs",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Subscriptions",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Talent Workshops",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "CPSP Certificates",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Ratings",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Shop Help",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "Contact Us",
                     url : "#",
-                    current : false,
                 }],
 
             listSites : [
                 {
                     text : "DC",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "MAD Magazine",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "DC Kids",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "DC Universe",
                     url : "#",
-                    current : false,
                 },
                 {
                     text : "DC Power Visa",
                     url : "#",
-                    current : false,
                 }
                 ],
 
@@ -262,7 +237,6 @@ export default {
         img {
             padding-left: 15px;
         }
-
     }
 
     .my_inline {
@@ -292,5 +266,21 @@ export default {
      .dc_logo_bg {
             height: 500px;
             width: 500px;
+            margin-top: -35px;
         }
+
+
+    .btn_footer {
+      border-color: $dcLogoColor;
+      color: $whiteColor;
+      background-color: transparent;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      line-height: 4px;
+      text-transform: uppercase;
+      font-family: 'Staatliches';
+    }
 </style>
